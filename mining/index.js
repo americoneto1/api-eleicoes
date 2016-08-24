@@ -7,7 +7,9 @@ var path = require('path');
 function getdata(dirname, templatename, callback) {
   "use strict";
 
-  let template = fs.readFileSync(templatename, 'utf-8');
+  dirname = path.join('data', dirname);
+
+  let template = fs.readFileSync(path.join('templates', templatename), 'utf-8');
 
   fs.readdir(dirname, (err, files) => {
     if (err) return;
@@ -37,14 +39,4 @@ function getdata(dirname, templatename, callback) {
   });
 }
 
-function importdata(data, template) {
-  "use strict";
-
-  getdata(data, template, (jsonObject) => {
-    bem.create(jsonObject)
-      .then(console.log(res))
-      .catch(console.error(res));
-  });
-}
-
-module.exports = importdata;
+module.exports = getdata;

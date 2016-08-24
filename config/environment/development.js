@@ -4,7 +4,7 @@
 // ==================================
 module.exports = {
   // Server port
-  port:   8080,
+  port:   7000,
 
   // MongoDB connection options
   mongo: {

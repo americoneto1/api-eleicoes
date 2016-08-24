@@ -3,11 +3,32 @@
 var fs = require('fs');
 var os = require('os');
 var path = require('path');
+var request = require('request');
+var AdmZip = require('adm-zip');
+
+var datadir = 'data';
+
+function extractdata(url) {
+  "use strict";
+
+  let zipfile = path.join(datadir, path.basename(url));
+
+  if (!fs.existsSync(datadir)){
+    fs.mkdirSync(datadir);
+  }
+
+  request.get(url)
+    .pipe(fs.createWriteStream(zipfile))
+    .on('end', () => {
+      var zip = new AdmZip(zipfile);
+      zip.extractAllTo(datadir, true);
+    });
+}
 
 function getdata(dirname, templatename, callback) {
   "use strict";
 
-  dirname = path.join('data', dirname);
+  dirname = path.join(datadir, dirname);
 
   let template = fs.readFileSync(path.join('templates', templatename), 'utf-8');
 
@@ -39,4 +60,4 @@ function getdata(dirname, templatename, callback) {
   });
 }
 
-module.exports = getdata;
+module.exports = { getdata, extractdata };

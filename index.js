@@ -8,11 +8,16 @@ var restify = require('restify');
 mongoose.connect(config.mongo.uri);
 mongoose.connection.on('error', function(err) {
   console.error('MongoDB connection error: ' + err);
-  process.exit(-1);
+  //process.exit(-1);
 });
 
 var server = restify.createServer();
+server.use(restify.CORS());
+server.use(restify.queryParser());
+server.use(restify.gzipResponse());
 
-server.listen(config.port, config.ip, function() {
+require('./api/routes')(server);
+
+server.listen(config.port, function() {
   console.log('Restify server listening on %d', config.port);
 });

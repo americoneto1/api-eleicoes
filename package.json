@@ -14,7 +14,9 @@
   },
   "homepage": "https://github.com/americoneto1/api-eleicoes#readme",
   "dependencies": {
+    "adm-zip": "^0.4.7",
     "mongoose": "^4.5.10",
+    "request": "^2.74.0",
     "restify": "^4.1.1"
   }
 }

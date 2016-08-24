@@ -1,0 +1,28 @@
+{
+  "eleicao": {
+    "ano": "#2",
+    "numeroTurno": "#3",
+    "descricao": "#4",
+    "siglaUF": "#5"
+  },
+  "unidadeEleitoral": {
+    "sigla": "#6",
+    "descricao": "#7"
+  },
+  "cargo": {
+    "codigo": "#8",
+    "descricao": "#9"
+  },
+  "tipoLegenda": "#10",
+  "partido": {
+    "numero": "#11",
+    "sigla": "#12",
+    "nome": "#13"
+  },
+  "coligacao": {
+    "sigla": "#14",
+    "nome": "#15",
+    "composicao": "#16",
+    "sequencial": "#17"
+  }
+}

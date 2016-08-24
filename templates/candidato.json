@@ -1,0 +1,74 @@
+{
+  "eleicao": {
+    "ano": "#2",
+    "numeroTurno": "#3",
+    "descricao": "#4",
+    "siglaUF": "#5"
+  },
+  "unidadeEleitoral": {
+    "sigla": "#6",
+    "descricao": "#7"
+  },
+  "cargo": {
+    "codigo": "#8",
+    "descricao": "#9"
+  },
+  "nome": "#10",
+  "sequencial": "#11",
+  "numero": "#12",
+  "cpf": "#13",
+  "nomeUrna": "#14",
+  "situacaoCandidatura": {
+    "codigo": "#15",
+    "descricao": "#16"
+  },
+  "partido": {
+    "numero": "#17",
+    "sigla": "#18",
+    "nome": "#19"
+  },
+  "legenda": {
+    "codigo": "#20",
+    "sigla": "#21",
+    "composicao": "#22",
+    "nome": "#23"
+  },
+  "ocupacao": {
+    "codigo": "#24",
+    "descricao": "#25"
+  },
+  "dataNascimento": "#26",
+  "numeroTituloEleitoral": "#27",
+  "idadeDataEleicao": "#28",
+  "sexo": {
+    "codigo": "#29",
+    "descricao": "#30"
+  },
+  "grauInstituicao": {
+    "codigo": "#31",
+    "descricao": "#32"
+  },
+  "estadoCivil": {
+    "codigo": "#33",
+    "descricao": "#34"
+  },
+  "corRaca": {
+    "codigo": "#35",
+    "descricao": "#36"
+  },
+  "nacionalidade": {
+    "codigo": "#37",
+    "descricao": "#38"
+  },
+  "municipioNascimento": {
+    "siglaUf": "#39",
+    "codigo": "#40",
+    "nome": "#41"
+  },
+  "despesaMaximaCampanha": "#42",
+  "situacaoTotalizacaoCandidatoTurno": {
+    "codigo": "#43",
+    "descricao": "#44"
+  },
+  "email": "#45"
+}

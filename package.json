@@ -1,0 +1,20 @@
+{
+  "name": "api-eleicoes",
+  "version": "1.0.0",
+  "description": "API de consulta de candidatos para as eleições de 2016",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/americoneto1/api-eleicoes.git"
+  },
+  "author": "Americo Neto",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/americoneto1/api-eleicoes/issues"
+  },
+  "homepage": "https://github.com/americoneto1/api-eleicoes#readme",
+  "dependencies": {
+    "mongoose": "^4.5.10",
+    "restify": "^4.1.1"
+  }
+}

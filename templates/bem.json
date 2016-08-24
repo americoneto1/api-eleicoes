@@ -1,0 +1,16 @@
+{
+  "eleicao": {
+    "ano": "#2",
+    "descricao": "#3",
+    "siglaUF": "#4"
+  },
+  "sequencial": "#5",
+  "tipoBem": {
+    "codigo": "#6",
+    "descricao": "#7"
+  },
+  "detalhe": "#8",
+  "valor": "#9",
+  "dataUltimaAtualizacao": "#10",
+  "horaUltimaAtualizacao": "#11"
+}
